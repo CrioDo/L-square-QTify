@@ -1,0 +1,16 @@
+.btn {
+  height: 27px;
+  width: 138px;
+  margin-top: 16px;
+  margin-left: 16px;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: var(--color-primary);
+  background-color: var(--color-black);
+}
+/* .btn-primary {
+  color: var(--color-primary);
+  background-color: var(--color-black);
+} */

@@ -2,4 +2,6 @@
   background-color: var(--color-primary);
   height: 74px;
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
 }
