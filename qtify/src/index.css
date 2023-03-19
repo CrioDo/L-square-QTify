@@ -17,6 +17,7 @@ html,
 body {
   height: 100%;
   font-family: "Poppins", sans-serif;
+  color: var(--color-white);
 }
 body {
   line-height: 1.5;
@@ -49,4 +50,7 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+.swiper-slide {
+  width: auto !important;
 }

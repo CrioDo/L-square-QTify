@@ -1,0 +1,17 @@
+.container {
+  margin: 5px 32px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0px 4px; */
+}
+.card_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px;
+}
+.show_all {
+  color: var(--color-primary);
+}

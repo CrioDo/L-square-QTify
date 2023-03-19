@@ -28,7 +28,7 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 4px 8px;
-  width: 71px;
+  width: fit-content;
   height: 23px;
   background-color: var(--color-black);
   border-radius: 10px;
@@ -37,7 +37,7 @@
   gap: 1px;
 }
 .Follower_text {
-  width: 55px;
+  /* width: fit-content; */
   height: 15px;
   font-style: normal;
   font-weight: 400;
@@ -55,6 +55,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  overflow: hidden;
 
-  color: #ffffff;
+  color: var(--color-white);
 }
