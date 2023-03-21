@@ -15,11 +15,11 @@ export const Card = ({ cardDetails, type }) => {
                 alt="card"
                 className={styles.image}
               />
-              <div className={styles.followers}>
-                <span className={styles.Follower_text}>
-                  {cardDetails.follows} Follows
-                </span>
+              {/* <div className={styles.followers}> */}
+              <div className={styles.Follower_text}>
+                {cardDetails.follows} Follows
               </div>
+              {/* </div> */}
             </div>
             <p className={styles.title}>{cardDetails.title}</p>
           </div>

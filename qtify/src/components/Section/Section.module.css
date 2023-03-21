@@ -1,5 +1,5 @@
 .container {
-  margin: 5px 32px;
+  margin: 20px 32px 5px 32px;
 }
 .wrapper {
   display: flex;
@@ -9,7 +9,7 @@
 .card_wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 40px;
   margin-top: 20px;
 }
 .show_all {

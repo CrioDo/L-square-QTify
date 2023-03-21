@@ -3,11 +3,11 @@ import { Card } from "../Card/Card";
 import { CarouselComponent } from "../Carousel/CarouselComponent";
 import styles from "./Section.module.css";
 
-export const Section = ({ title, dataSourse }) => {
+export const Section = ({ title, dataSourse, type }) => {
   const [cards, setCards] = useState([]);
-  const [isShowAll, setisShowAll] = useState(true);
+  const [isShowAll, setisShowAll] = useState(false);
   useEffect(() => {
-    dataSourse().then((data) => {
+    dataSourse(type).then((data) => {
       setCards(data);
     });
   }, []);
