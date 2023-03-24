@@ -38,7 +38,7 @@ export const Card = ({ cardDetails, type }) => {
               />
               <div className={styles.followers}>
                 <span className={styles.Follower_text}>
-                  {cardDetails.follows} Likes
+                  {cardDetails.likes} Likes
                 </span>
               </div>
             </div>

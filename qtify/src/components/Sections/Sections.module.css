@@ -1,0 +1,7 @@
+.album_container {
+}
+.songs_container {
+  margin-top: 20px;
+  border-top: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+}
