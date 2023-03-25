@@ -1,0 +1,33 @@
+.container {
+  width: 80%;
+  /* height: 78px; */
+  margin-top: 24px;
+  padding: 5px;
+  /* position: absolute; */
+}
+.accordian {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 20px;
+  border: 1px solid var(--color-white);
+  width: 100%;
+  /* height: 78px; */
+  /* text-align: center; */
+}
+.details {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  height: 81px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detailstext {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.summarytext {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
