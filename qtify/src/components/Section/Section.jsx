@@ -4,22 +4,11 @@ import { CarouselComponent } from "../Carousel/CarouselComponent";
 import { Filter } from "../Filter/Filter";
 import styles from "./Section.module.css";
 
-export const Section = ({
-  title,
-  dataSourse,
-  dataType,
-  sectionType,
-  filterSource,
-}) => {
-  const [cards, setCards] = useState([]);
+export const Section = ({ title, dataSourse, sectionType, filterSource }) => {
   const [isShowAll, setisShowAll] = useState(false);
   const [filters, setFilters] = useState([{ key: "all", label: "All" }]);
   const [selectedFilterIndex, setSelectedFilterIndex] = useState(0);
   useEffect(() => {
-    dataSourse(dataType).then((data) => {
-      setCards(data);
-    });
-
     if (filterSource) {
       filterSource().then((data) => {
         // console.log(data.data);
@@ -32,7 +21,7 @@ export const Section = ({
     setisShowAll((prevState) => !prevState);
   };
 
-  const filteredCardList = cards.filter((card) =>
+  const filteredCardList = dataSourse.filter((card) =>
     selectedFilterIndex !== 0
       ? card.genre.key === filters[selectedFilterIndex].key
       : card
@@ -50,7 +39,7 @@ export const Section = ({
       </div>
       {isShowAll ? (
         <div className={styles.card_wrapper}>
-          {cards.map((card) => (
+          {dataSourse.map((card) => (
             <Card cardDetails={filteredCardList} type={sectionType} />
           ))}
         </div>

@@ -7,44 +7,44 @@ export const Card = ({ cardDetails, type }) => {
     switch (type) {
       case "album": {
         return (
-          // <Link to={`/`}>
-          <div className={styles.container}>
-            <div className={styles.image_container}>
-              <img
-                src={`${cardDetails.image}`}
-                alt="card"
-                className={styles.image}
-              />
-              {/* <div className={styles.followers}> */}
-              <div className={styles.Follower_text}>
-                {cardDetails.follows} Follows
+          <Link to={`/album/${cardDetails.slug}`}>
+            <div className={styles.container}>
+              <div className={styles.image_container}>
+                <img
+                  src={`${cardDetails.image}`}
+                  alt="card"
+                  className={styles.image}
+                />
+                {/* <div className={styles.followers}> */}
+                <div className={styles.Follower_text}>
+                  {cardDetails.follows} Follows
+                </div>
+                {/* </div> */}
               </div>
-              {/* </div> */}
+              <p className={styles.title}>{cardDetails.title}</p>
             </div>
-            <p className={styles.title}>{cardDetails.title}</p>
-          </div>
-          // </Link>
+          </Link>
         );
       }
       case "song": {
         return (
-          // <Link to={`/`}>
-          <div className={styles.container}>
-            <div className={styles.image_container}>
-              <img
-                src={`${cardDetails.image}`}
-                alt="card"
-                className={styles.image}
-              />
-              <div className={styles.followers}>
-                <span className={styles.Follower_text}>
-                  {cardDetails.likes} Likes
-                </span>
+          <Link to={`/album/${cardDetails.slug}`}>
+            <div className={styles.container}>
+              <div className={styles.image_container}>
+                <img
+                  src={`${cardDetails.image}`}
+                  alt="card"
+                  className={styles.image}
+                />
+                <div className={styles.followers}>
+                  <span className={styles.Follower_text}>
+                    {cardDetails.likes} Likes
+                  </span>
+                </div>
               </div>
+              <p className={styles.title}>{cardDetails.title}</p>
             </div>
-            <p className={styles.title}>{cardDetails.title}</p>
-          </div>
-          // </Link>
+          </Link>
         );
       }
       default: {
