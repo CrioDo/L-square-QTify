@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.album_detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  /* border: 2px solid green; */
+  /* height: 33vh; */
+  width: 85vw;
+}
+.album_image {
+}
+.image {
+  height: 329px;
+  width: 288px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  /* height: 22vh; */
+  width: 63vw;
+  margin-left: 60px;
+  padding: 2px;
+  gap: 20px;
+}
+.title {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 3vh;
+  font-weight: 500;
+}
+.song_details {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.follows {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.dot {
+  /* font-weight: bolder; */
+  /* font-size: 40px; */
+  height: 7px;
+  width: 7px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: inline-block;
+}
+.button_container {
+  display: flex;
+  gap: 39px;
+}
+.icon {
+  height: 26px;
+  width: 26px;
+  margin-right: 3px;
+}

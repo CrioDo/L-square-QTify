@@ -15,7 +15,7 @@ export const Navbar = ({ searchData }) => {
         placeholder="Search a song of your choice"
         searchData={searchData}
       />
-      <Button>Give Feedback</Button>
+      <Button type="btn-secondry">Give Feedback</Button>
     </div>
   );
 };

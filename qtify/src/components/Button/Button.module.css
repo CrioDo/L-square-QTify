@@ -1,17 +1,20 @@
 .btn {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   text-align: center;
-  color: var(--color-primary);
   border-radius: 12px;
-  border: 1px solid var(--color-primary);
-  background-color: var(--color-black);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 10px 16px;
 }
-/* .btn-primary {
-  color: var(--color-primary);
+.btn-primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.btn-secondry {
+  border: 1px solid var(--color-primary);
   background-color: var(--color-black);
-} */
+  color: var(--color-primary);
+}
