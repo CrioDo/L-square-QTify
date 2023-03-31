@@ -1,0 +1,24 @@
+.container {
+  width: 100vw;
+  height: 270px;
+  background: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_message {
+  width: 572px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: var(--color-white);
+  /* margin-top: 97px; */
+}
+.hero_image {
+  width: 212px;
+  height: 212px;
+  margin-left: 60px;
+}

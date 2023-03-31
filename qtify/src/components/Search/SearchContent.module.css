@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
+  /* height: ; */
+  padding: 0px;
+}
+.image {
+  height: 60px;
+  width: 55px;
+}
+.title_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.title {
+  font-size: 16px;
+  line-height: 24px;
+}
+.descreption {
+  font-size: 12px;
+  line-height: 18px;
+}
