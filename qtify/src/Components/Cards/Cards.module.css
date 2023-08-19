@@ -1,0 +1,24 @@
+.cards{
+    padding-left: 32px;
+    height: 205px;
+    width: 191px;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+}
+.cardimg{
+    padding-top: 18px;
+    line-height: 0;
+}
+.follower{
+    height: 35px;
+    background-color: var(--color-white);
+    border: 1px solid;
+    border-radius: 0px 0px 10px 10px;
+    padding: 6px 8px 
+}
+p{
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
