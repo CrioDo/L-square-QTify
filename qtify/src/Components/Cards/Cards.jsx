@@ -1,21 +1,55 @@
-import React from 'react';
-import styles from "../Cards/Cards.module.css"
-import CardImg from "../../assets/cardsImg.png";
-import FollowerLogo from "../../assets/Followers.png";
+import React from "react";
+import { Chip, Tooltip } from "@mui/material";
+import styles from "./Cards.module.css";
 
-const Cards = () => {
-  return (
-    <div className={styles.cards}>
-        <h2>Top Albums</h2>
-        <div className={styles.cardimg}>
-            <img src={CardImg} alt="Cards"/>
-        </div>
-        <div className={styles.follower}>
-            <img src={FollowerLogo} alt='Followers' />
-        </div>
-        <p>New Bollywood</p>
-    </div>
-  );
-}
+const Cards = ({ data, type }) => {
+  // console.log(data,type,"check")
+  const getCard = (type) => {
+    switch (type) {
+      case "album": {
+        const { image, follows, title, songs } = data;
+        //console.log(image ,follows ,title ,songs,"datacheck")
+        return (
+          <Tooltip title={`${songs?.length} songs`} placement="top" arrow>
+            <div className={styles.wrapper}>
+              <div className={styles.cards}>
+                <img src={image} alt="album" />
+                <div className={styles.banner}>
+                  <Chip
+                    label={`${follows} Follows`}
+                    className={styles.chip}
+                    size="small"
+                  />
+                </div>
+              </div>
+              <div className={styles.titleWrapper}>
+                <p>{title}</p>
+              </div>
+            </div>
+          </Tooltip>
+        );
+      }
+      default:
+        return <></>;
+    }
+  };
+  return getCard(type);
 
+  //create for static cards for session 4 assinment
+  //   import styles from "../Cards/Cards.module.css"
+  // import CardImg from "../../assets/cardsImg.png";
+  // import FollowerLogo from "../../assets/Followers.png";
+  // return (
+  //   <div className={styles.cards}>
+  //       <h2>Top Albums</h2>
+  //       <div className={styles.cardimg}>
+  //           <img src={CardImg} alt="Cards"/>
+  //       </div>
+  //       <div className={styles.follower}>
+  //           <img src={FollowerLogo} alt='Followers' />
+  //       </div>
+  //       <p>New Bollywood</p>
+  //   </div>
+  // );
+};
 export default Cards;
