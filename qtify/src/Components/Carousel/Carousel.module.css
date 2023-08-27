@@ -4,14 +4,14 @@
 .leftNavigation{
     position: absolute;
     top: 40%;
-    left: -10px;
-    transform: translate();
+    left: 10px;
+    transform: translateY(-50%);
     z-index: 10;
 }
 .rightNavigation{
     position: absolute;
     top: 40%;
     right: 10px;
-    transform: translate(-50%);
+    transform: translateY(-50%);
     z-index: 10;
-}
+} 
