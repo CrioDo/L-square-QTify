@@ -11,7 +11,7 @@
 .rightNavigation{
     position: absolute;
     top: 40%;
-    left: 10px;
+    right: 10px;
     transform: translate(-50%);
     z-index: 10;
 }

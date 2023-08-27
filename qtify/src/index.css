@@ -31,3 +31,6 @@ img,svg{
  display: block;
  max-width: 100%;
 }
+.swiper-slide{
+  width: auto !important;
+}

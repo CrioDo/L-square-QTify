@@ -9,18 +9,18 @@ import CarouselRightNavigation from './CarouselRightNavigation/CarouselRightNavi
 const Controls=({data})=>{
     const swiper=useSwiper();
     
-    // console.log(swiper);
+    console.log(swiper);
 
-    useEffect(()=>{
-        swiper.slideTo(0)
-    }, [data])
-    if (!swiper) {
-        return null; // or a loading state
-      }
+    // useEffect(()=>{
+        //swiper.slideTo(0)
+    // }, [])
+    // if (!swiper) {
+    //     return null; // or a loading state
+    //   }
     // useEffect(() => {
-        // if (swiper) {
-        //   swiper.slideTo(0);
-        // }
+    //     if (swiper) {
+    //       swiper.slideTo(0);
+    //     }
     //   }, [data, swiper]);
    return <></>;
 }
@@ -34,8 +34,8 @@ const Carousel = ({data,renderCardComponent}) => {
             <Controls data={data}/>
             <CarouselLeftNavigation/>
             <CarouselRightNavigation/>
-            {data.map((elem)=>(
-                <SwiperSlide>{renderCardComponent(elem)}</SwiperSlide>
+            {data.map((elem ,index)=>(
+                <SwiperSlide key={index+1}>{renderCardComponent(elem)}</SwiperSlide>
             ))}
         </Swiper> 
     </div>
