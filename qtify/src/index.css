@@ -1,0 +1,26 @@
+:root{
+    --color-primary: #34c94b;
+    --color-black: #121212;
+    --color-white: #ffffff;
+}
+
+::before, 
+::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.5;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    overflow-x: hidden;
+}
