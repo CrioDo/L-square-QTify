@@ -1,0 +1,36 @@
+:root {
+  --color-primary: #34C94B;
+  ;
+  --color-black: #121212;
+  --color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  line-height: 1.5;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  overflow: auto;
+}
+img,svg{
+ display: block;
+ max-width: 100%;
+}
+.swiper-slide{
+  width: auto !important;
+}
