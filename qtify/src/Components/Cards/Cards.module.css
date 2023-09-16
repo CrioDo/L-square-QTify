@@ -29,7 +29,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+.pill{
+    font-size: 12px;
+    width: max-content;
+    background-color: var(--color-black);
+    padding: 6px;
+    border-radius: 10px;
+}
 
 
 

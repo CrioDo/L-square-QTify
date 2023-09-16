@@ -1,17 +1,5 @@
 .carouselWrapper{
     position: relative;
 }
-.leftNavigation{
-    position: absolute;
-    top: 40%;
-    left: 10px;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-.rightNavigation{
-    position: absolute;
-    top: 40%;
-    right: 10px;
-    transform: translateY(-50%);
-    z-index: 10;
-} 
+
+

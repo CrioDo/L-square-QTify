@@ -3,7 +3,7 @@ import { Chip, Tooltip } from "@mui/material";
 import styles from "./Cards.module.css";
 
 const Cards = ({ data, type }) => {
-  // console.log(data,type,"check")
+   //console.log(data,"check")
   const getCard = (type) => {
     switch (type) {
       case "album": {
@@ -27,6 +27,24 @@ const Cards = ({ data, type }) => {
               </div>
             </div>
           </Tooltip>
+        );
+      }
+      case "song": {
+        const { image, likes, title} = data;
+        return (
+            <div className={styles.wrapper}>
+              <div className={styles.cards}>
+                <img src={image} alt="song" loading="lazy"/>
+                <div className={styles.banner}>
+                   <div className={styles.pill}>
+                    <p>{likes} Likes</p>
+                   </div> 
+                </div>
+              </div>
+              <div className={styles.titleWrapper}>
+                <p>{title}</p>
+              </div>
+            </div>
         );
       }
       default:
