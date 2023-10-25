@@ -2,3 +2,4 @@
 assessment/node_modules
 assessment/.env
 assessment/cypressResults.json
+assessment/cypress/screenshots
