@@ -1,0 +1,4 @@
+.pytest_cache/
+assessment/node_modules
+assessment/.env
+assessment/cypressResults.json
