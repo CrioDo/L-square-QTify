@@ -1,7 +1,7 @@
 describe("Qtify Automation", () => {
   beforeEach(() => {
-    cy.visit("https://rahul-sessions-qtify.netlify.app/");
-    // cy.visit("https://rahul-sessions-qtify.netlify.app/");
+    cy.visit("https://example.com/");
+    // cy.visit("https://example.com/");
   });
   describe("Navbar", () => {
     it("Should contain logo, search bar, and a button", () => {
