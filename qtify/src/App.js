@@ -1,11 +1,13 @@
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
-  return (
-    <div className="App">
-      This is my QTify Project
-    </div>
-  );
+	return (
+		<div className="App">
+      <NavBar />
+		</div>
+	);
 }
 
 export default App;
