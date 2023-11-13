@@ -35,11 +35,11 @@ const NavBar = ({ data, logo = true, search = true, feedback = true }) => {
 				) : null}
 
 				{feedback ? (
-					<div
+					<button
 						className={styles.nav_link}
 						onClick={() => _toggleFeedBackModal(true)}>
 						Give Feedback
-					</div>
+					</button>
 				) : null}
 			</nav>
 			<FeedBackModal
