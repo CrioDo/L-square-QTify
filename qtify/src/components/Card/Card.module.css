@@ -23,7 +23,7 @@
 }
 
 .pill {
-    font-size: 6px;
+    font-size: 10px;
     background-color: var(--color-black);
     width: max-content;
     padding: 6px;

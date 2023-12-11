@@ -4,9 +4,7 @@ import { Outlet } from "react-router-dom";
 import {
   fetchTopAlbums,
   fetchNewAlbums,
-  fetchSongs,
-  fetchFilters,
-  fetchAlbumSongs,
+  fetchSongs
 } from "./api/api";
 import { useEffect, useState } from "react";
 import { StyledEngineProvider } from "@mui/material";
@@ -21,15 +19,16 @@ function App() {
   useEffect(() => {
     generateData("topAlbums", fetchTopAlbums);
     generateData("newAlbums", fetchNewAlbums);
+    generateData("songs", fetchSongs);
   }, []);
 
-  const { topAlbums = [], newAlbums = [] } = data;
+  const { topAlbums = [], newAlbums = [], songs = [] } = data;
 
   return (
     <>
       <StyledEngineProvider>
         <Navbar />
-        <Outlet context={{ data: { topAlbums, newAlbums } }} />
+        <Outlet context={{ data: { topAlbums, newAlbums, songs } }} />
       </StyledEngineProvider>
     </>
   );

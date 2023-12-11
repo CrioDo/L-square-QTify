@@ -5,17 +5,17 @@ import { useSwiper } from "swiper/react";
 
 const CarouselRightNavigation = () => {
     const swiper = useSwiper();
-    const [isLast, setIsLast] = useState(swiper.isLast);
+    const [isEnd, setIsEnd] = useState(swiper.isEnd);
   
     useEffect(() => {
       swiper.on("slideChange", () => {
-        setIsLast(swiper.isLast);
+        setIsEnd(swiper.isEnd);
       });
     }, []);
   
     return (
       <div className={styles.rightNavigation}>
-          {!isLast && <RightArrow onClick={() => swiper.slideNext()}/>}
+          {!isEnd && <RightArrow onClick={() => swiper.slideNext()}/>}
       </div>
     )
 }
