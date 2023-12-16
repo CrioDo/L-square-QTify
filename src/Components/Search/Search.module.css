@@ -1,0 +1,30 @@
+.searchbar {
+	width: 568px;
+	height: 48px;
+	border-radius: 8px;
+	border: 1px solid var(--color-black);
+	background: var(--color-white);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.searchbar > input {
+	height: inherit;
+	width: calc(568px - 66px);
+	outline: none;
+	border-radius: 8px 0px 0px 8px;
+	border: 1px solid var(--color-black);
+
+	background: var(--color-white);
+}
+.searchbar > .searchicon {
+	height: inherit;
+	width: 66px;
+	padding: 11px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--color-black);
+	border-radius: 0px 8px 8px 0px;
+}
