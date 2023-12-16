@@ -1,0 +1,10 @@
+.feedback_btn {
+	display: inline-flex;
+	padding: 10px 16px;
+	border-radius: 12px;
+	align-items: flex-start;
+	gap: 10px;
+	border: 1px solid var(--Primary-400, var(--color-primary));
+	color: var(--color-primary);
+	background: var(--color-black);
+}
