@@ -22,3 +22,8 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pytest_cache/
+assessment/node_modules
+assessment/.env
+assessment/cypressResults.json
+assessment/cypress/screenshots
