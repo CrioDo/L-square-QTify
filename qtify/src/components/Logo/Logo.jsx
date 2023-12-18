@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from "./Icon.module.css";
+import styles from "./Logo.module.css";
 import qtify from "../../assets/qtify.png";
 import headphone from "../../assets/headphone.png"
 
-function Icon({ source }) {
+function Logo({ source }) {
 
     return (<div className={styles.icon}>
         <img src={qtify} alt="" className={styles.qtifyicon} />
@@ -12,4 +12,4 @@ function Icon({ source }) {
     )
 }
 
-export default Icon
+export default Logo;

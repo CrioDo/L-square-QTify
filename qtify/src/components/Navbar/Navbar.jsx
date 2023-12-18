@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./Navbar.module.css";
 import Search from '../Search/Search';
 import Button from '../Button/Button';
-import Icon from '../Icon/Icon';
+import Logo from '../Logo/Logo';
 import qtify from '../../assets/qtify.png';
 import headphone from '../../assets/headphone.png';
 
@@ -11,7 +11,7 @@ function Navbar() {
     return (
         <div>
             <nav className={styles.navbar}>
-                <Icon source={[qtify, headphone]} />
+                <Logo source={[qtify, headphone]} />
                 <Search placeholder={"Search a album of your choice"} />
                 <Button >Give Feedback</Button>
             </nav>
