@@ -4,7 +4,6 @@ import Search from '../Search/Search';
 import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
 import qtify from '../../assets/qtify.png';
-import headphone from '../../assets/headphone.png';
 
 function Navbar() {
 

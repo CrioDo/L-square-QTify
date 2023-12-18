@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from "./Logo.module.css";
-import headphone from "../../assets/qtify.png";
+import logo from "../../assets/logo.png";
 
-function Logo({ qtify, headphone }) {
+function Logo() {
 
     // return (<div className={styles.icon}>
     //     <img src={qtify} alt="logo" className={styles.qtifyicon} />
@@ -11,7 +11,7 @@ function Logo({ qtify, headphone }) {
     // )
 
     return <>
-        <img src={headphone} alt="logo" />
+        <img src={logo} alt="logo" className={styles.qtifyicon}/>
     </>
 }
 
