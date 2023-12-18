@@ -11,8 +11,8 @@ function Navbar() {
     return (
         <div>
             <nav className={styles.navbar}>
-                <Logo qtify={qtify} logo={logo} />
-                {/* <Logo /> */}
+                {/* <Logo qtify={qtify} logo={logo} /> */}
+                <Logo />
                 <Search placeholder={"Search a album of your choice"} />
                 <Button >Give Feedback</Button>
             </nav>
