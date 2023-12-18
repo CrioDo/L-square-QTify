@@ -5,8 +5,8 @@
 }
 
 *,
-*::before,
-*::afer {
+*::before, 
+*::after {
   box-sizing: border-box;
 }
 
