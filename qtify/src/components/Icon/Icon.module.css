@@ -1,0 +1,16 @@
+.icon{
+    align-items: center;
+    position: relative;
+}
+
+.qtifyicon{
+    height: 34px;
+    width: 67px;
+}
+.headicon{
+    width: 28px;
+    height: 24px;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+}
