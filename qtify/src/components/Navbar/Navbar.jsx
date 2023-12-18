@@ -4,14 +4,15 @@ import Search from '../Search/Search';
 import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
 import qtify from '../../assets/qtify.png';
+import logo from '../../assets/logo.png';
 
 function Navbar() {
 
     return (
         <div>
             <nav className={styles.navbar}>
-                {/* <Logo qtify={qtify} headphone={headphone} /> */}
-                <Logo />
+                <Logo qtify={qtify} logo={logo} />
+                {/* <Logo /> */}
                 <Search placeholder={"Search a album of your choice"} />
                 <Button >Give Feedback</Button>
             </nav>

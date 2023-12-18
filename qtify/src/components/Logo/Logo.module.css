@@ -1,16 +1,20 @@
 .icon{
+    display: flex;
     align-items: center;
     position: relative;
-}
-
-.qtifyicon{
     height: 34px;
     width: 67px;
 }
+
+.qtifyicon{
+    height: 24px;
+    width: 60px;
+}
+
 .headicon{
     width: 28px;
     height: 24px;
-    position: absolute;
-    top: -6px;
-    left: -6px;
+    position: absolute; 
+    top: -5px;
+    left: -7px;
 }
