@@ -1,20 +1,24 @@
-.icon{
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 34px;
+/* .headicon {
     width: 67px;
-}
+} */
 
-.qtifyicon{
-    height: 24px;
-    width: 60px;
-}
+/* .icon{
+        display: flex;
+        align-items: center; 
+        position: relative;
+        height: 34px;
+        width: 67px;
+    } 
 
-.headicon{
-    width: 28px;
-    height: 24px;
-    /* position: absolute; 
-    top: -5px;
-    left: -7px; */
-}
+    .qtifyicon{
+        height: 24px;
+        width: 60px;
+    }
+
+     .headicon{
+        width: 28px;
+        height: 24px;
+        position: absolute; 
+        top: -5px;
+        left: -7px;
+    } */
