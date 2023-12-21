@@ -3,9 +3,8 @@ import styles from "./Navbar.module.css";
 import Search from '../Search/Search';
 import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
-import logo from '../../assets/logo.png';
 
-function Navbar() {
+function Navbar({searchData}) {
 
     return (
         <div>
