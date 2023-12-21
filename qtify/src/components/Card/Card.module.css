@@ -44,8 +44,5 @@
     background-color: var(--color-black);
 }
 
-a:link, :visited {
-    text-decoration: none;
-    color: var(--color-white);
-}
+
 

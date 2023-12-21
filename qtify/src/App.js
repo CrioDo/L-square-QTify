@@ -1,51 +1,35 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import axios from "axios";
-import Section from "./components/Section/Section";
+import { StyledEngineProvider } from "@mui/material";
+import { Outlet } from "react-router-dom";
+import { fetchNewAlbums, fetchSongs, fetchTopAlbums } from "./components/Api/ApiData";
 
 function App() {
-  const url = 'https://qtify-backend-labs.crio.do/albums/';
 
-  const [topAlbum, setTopAlbum] = useState([]);
-  const [newAlbum, setNewAlbum] = useState([]);
+  const [searchData, useSearchData] = useState();
+  const [data, setData] = useState({});
 
-  const topAlbumData = async () => {
-    try{
-      await axios.get(`${url}/top`)
-      .then(resp => {
-        setTopAlbum(resp.data);
+  const generateData = (key, source) => {
+    source().then(data => {
+      setData((prevData) => {
+        return {...prevData, [key]: data};
       })
-    }catch(err){
-      console.log(err.message);
-    }
-  }
-
-  const newAlbumData = async () => {
-    try{
-      await axios.get(`${url}/new`)
-      .then(resp => {
-        setNewAlbum(resp.data);
-      })
-    }catch(err){
-      console.log(err.message);
-    }
+    })
   }
 
   useEffect(() => {
-    topAlbumData();
-    newAlbumData();
-    console.log('top ->',topAlbum);
-    console.log('new ->',newAlbum);
+    generateData("topAlbums", fetchTopAlbums);
+    generateData("newAlbums", fetchNewAlbums);
+    generateData("songs", fetchSongs);
   },[]);
 
+  const {topAlbums = [], newAlbums = [], songs = []} = data;
+
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Section title='Top Album' data={topAlbum}  type='album'/>
-      <Section title='New Album' data={newAlbum}  type='album'/>
-    </div>
+    <StyledEngineProvider injectFirst>
+      <Navbar searchData={[...topAlbums, ...newAlbums]}/>
+      <Outlet context={{data: {topAlbums, newAlbums, songs}}}/>
+    </StyledEngineProvider>
   );
 }
 

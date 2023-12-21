@@ -5,7 +5,7 @@
 }
 
 *,
-*::before, 
+*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -56,4 +56,12 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
