@@ -14,7 +14,7 @@ function LeftNavigation() {
 
 
   return (
-    <div>
+    <div className={styles.leftNavigation}>
         {!isBeginning && <LeftArrow onClick={() => swiper.slidePrev()} />}
     </div>
   )

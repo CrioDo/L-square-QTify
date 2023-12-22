@@ -5,33 +5,38 @@ import 'swiper/css';
 import Card from '../Card/Card';
 import LeftNavigation from './LeftNavigation';
 import RightNavigation from './RightNavigation';
+import styles from './Carousel.module.css';
 
 
-function Carousel({data, component}) {
+function Carousel({data, type}) {
 
 
-    // const Control = ({data}) => {
-    //     const swiper = useSwiper();
-    //     console.log(swiper);
-    //     // useEffect(() => {
-    //     //     swiper.slideTo(1);
-    //     // },[data]);
-    // }
+    const Controls = ({data}) => {
+        const swiper = useSwiper();
+        console.log(swiper);
+        useEffect(() => {
+            swiper.slideTo(0);
+        },[data]);
+        return <></>
+    }
 
     return (
 
-        <div>
-            <Swiper spaceBetween={50}
-                slidesPerView={3}
+        <div className={styles.wrapper}>
+            <Swiper 
                 modules={Navigation}
+                initialSlide={0}
+                slidesPerView={7}
+                spaceBetween={40}
+                allowTouchMove
             >   
                 
-                {/* <Control data={data} /> */}
+                <Controls data={data} />
                 <LeftNavigation />
                     {
-                        data.map((item) => {
-                            <SwiperSlide>{component(item)}</SwiperSlide>
-                        })
+                        data.map((item) => 
+                            <SwiperSlide key=".3: 1"> <Card data={item} type={type} key={item.id}/> </SwiperSlide>
+                        )
                     }
                 <RightNavigation />
             </Swiper>

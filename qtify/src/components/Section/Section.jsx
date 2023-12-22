@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from "./Section.module.css"
 import { CircularProgress } from '@mui/material'
 import Card from '../Card/Card'
-// import Carousel from '../Carousel/Carousel'
+import Carousel from '../Carousel/Carousel'
 
 
 function Section({ title, data, type }) {
@@ -32,7 +32,9 @@ function Section({ title, data, type }) {
                                     )}
                                 </div>
                             ) : (
-                                <></>
+                                <>
+                                    <Carousel data={data} type={type}/>
+                                </>
                             )
                         }
                     </div>
