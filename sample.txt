@@ -1,0 +1,1 @@
+This is to check if our git installation is working correctly
