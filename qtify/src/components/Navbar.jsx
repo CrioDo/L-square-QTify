@@ -8,7 +8,9 @@ import SearchBox from "./SearchBox";
 const Navbar=()=>{
     return (
         <nav className={styles.navbar}> 
-            <Logo />
+        <div>
+        <Logo />
+        </div>
             <SearchBox placeholder="Search a album of your choice"/>
             <ButtonFeedBack text="Give Feedback"/>
         </nav>
