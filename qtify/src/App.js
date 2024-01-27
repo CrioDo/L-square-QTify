@@ -1,13 +1,9 @@
-import './App.css';
-import { SfNav } from 'react-sf-building-blocks';
+import styles from './App.module.css';
+import Navbar from "./components/Navbar"
 function App() {
   return (
-    <div>
-      <div>
-            <SfNav showBanner={true} bannerText={"30% OFF On Select Products 💰"} bannerTextMobile={"30% OFF 💰"} />
-        </div>
-      <h1>hello this is first time deployment</h1>
-
+    <div >
+      <Navbar/>
     </div>
   );
 }
