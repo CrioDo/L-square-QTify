@@ -18,7 +18,7 @@ const Section = ({data,title,type}) => {
     {data.length === 0 ? (<CircularProgress/>) : 
     (
         <div className={styles.cardWrapper}>
-            {!toggle ? 
+            {toggle ? 
             (<div className={styles.wrapper}>
             {
                 data.map((ele) => (
