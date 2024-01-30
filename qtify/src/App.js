@@ -5,7 +5,7 @@ import Hero from './components/Hero/Hero';
 import { useState , useEffect } from 'react';
 import { fetchTopAlbums ,fetchNewAlbums} from './api/api';
 import AlbumGrid from './components/AlbumGrid/AlbumGrid';
-
+import Section from './components/Section/Section';
 function App() {
   const [topAlbumData,setTopAlbumData]=useState([]);
   const [newAlbumData,setNewAlbumData] = useState([]);
@@ -36,8 +36,10 @@ function App() {
     <div >
       <Navbar/>
       <Hero/>
-      <AlbumGrid data={topAlbumData} title="Top Album"/>
-      <AlbumGrid data={newAlbumData} title="New Album"/>
+      <Section data = {topAlbumData} title="Top Albums" type="album"/>
+      <Section data = {newAlbumData} title="New Albums" type="album"/>
+      {/* <AlbumGrid data={topAlbumData} title="Top Album"/>
+      <AlbumGrid data={newAlbumData} title="New Album"/> */}
     </div>
   );
 }

@@ -20,6 +20,11 @@
     display: flex;
     align-items: center;
     padding: 6px;
+
+    & .chip{
+        background-color: var(--color-black);
+        color: var(--color-white);
+    }
 }
 
 .titleWrapper{
@@ -28,7 +33,4 @@
     text-overflow: ellipsis;
 }
 
-.chip{
-    background-color: var(--color-black);
-    color: var(--color-white);
-}
+
