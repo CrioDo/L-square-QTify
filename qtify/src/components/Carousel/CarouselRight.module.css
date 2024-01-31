@@ -1,0 +1,9 @@
+.rightNavigation {
+   
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        z-index: 10;
+        color: var(--color-white);
+        right: 10px;
+}

@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Hero from './components/Hero/Hero';
 import { useState , useEffect } from 'react';
 import { fetchTopAlbums ,fetchNewAlbums} from './api/api';
-import AlbumGrid from './components/AlbumGrid/AlbumGrid';
 import Section from './components/Section/Section';
 function App() {
   const [topAlbumData,setTopAlbumData]=useState([]);
