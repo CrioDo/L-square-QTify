@@ -23,6 +23,49 @@ const Card = ({data,type}) => {
                 </Tooltip>
             )
         }
+
+        case "song" : {
+            const {image,likes,title,songs} = data;
+            return (
+              <Tooltip title={`${songs?.length} songs`} placement='top' arrow>
+              <div className={styles.wrapper}>
+                <div className={styles.card}>
+                  <img src={image} alt='song' loading='lazy' />
+                  <div className={styles.banner}>
+                    <div className={styles.pill}>
+                      <p>{likes} Likes</p>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.titleWrapper}>
+                  <p>{title}</p>
+                </div>
+              </div>
+              </Tooltip>
+            )
+          }
+
+          case 'songFilter' : {
+            const {image,likes,title} = data;
+            return (
+            <div className={styles.wrapper}>
+                <div className={styles.card}>
+                  <img src={image} alt='song' loading='lazy' />
+                  <div className={styles.banner}>
+                    <div className={styles.pill}>
+                      <p>{likes} Likes</p>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.titleWrapper}>
+                  <p>{title}</p>
+                </div>
+              </div>
+                        
+            )
+          }
+
+          
         default:
             return <></>;
     }
