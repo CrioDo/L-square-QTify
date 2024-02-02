@@ -32,9 +32,9 @@ const Card = ({data,type}) => {
                 <div className={styles.card}>
                   <img src={image} alt='song' loading='lazy' />
                   <div className={styles.banner}>
-                    <div className={styles.pill}>
-                      <p>{likes} Likes</p>
-                    </div>
+                  <div className={styles.banner}>
+                                <Chip label={`${likes} Likess`} size='small' className={styles.chip} />
+                            </div>
                   </div>
                 </div>
                 <div className={styles.titleWrapper}>
@@ -52,9 +52,9 @@ const Card = ({data,type}) => {
                 <div className={styles.card}>
                   <img src={image} alt='song' loading='lazy' />
                   <div className={styles.banner}>
-                    <div className={styles.pill}>
-                      <p>{likes} Likes</p>
-                    </div>
+                  <div className={styles.banner}>
+                                <Chip label={`${likes} Likes`} size='small' className={styles.chip} />
+                            </div>
                   </div>
                 </div>
                 <div className={styles.titleWrapper}>
