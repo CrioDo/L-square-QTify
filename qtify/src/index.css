@@ -1,0 +1,34 @@
+:root{
+  --color-primary:#34c94b;
+  --color-black:#121212;
+  --color-white:#ffffff
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  overflow-x: hidden;
+}
+
+img,svg {
+  display: block;
+  max-width: 100%;
+}
+
+.swiper-slide{
+  width: auto !important;
+}
