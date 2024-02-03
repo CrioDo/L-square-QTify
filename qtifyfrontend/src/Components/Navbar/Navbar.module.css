@@ -6,3 +6,7 @@
   align-items: center;
   justify-content: space-between;
 }
+.logo {
+  align-items: center;
+  left: 17px;
+}

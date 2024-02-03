@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <a href="/">
+      <a className={styles.logo} href="/">
         <Logo />
       </a>
       <Search placeHolder="Search a album of your choice" />
