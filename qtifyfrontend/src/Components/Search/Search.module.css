@@ -1,0 +1,29 @@
+.searchContainer {
+  width: 568px;
+  height: 48px;
+  border-radius: 0px, 8px, 8px, 0px;
+
+  display: flex;
+}
+
+.search {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+  padding: 20px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.searchButton {
+  height: 48px;
+  border: 1px solid var(--color-black);
+  width: 66px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

@@ -1,0 +1,7 @@
+.image {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  width: 67px;
+  height: 34px;
+  padding: 20px 32px;
+}

@@ -1,0 +1,18 @@
+.button {
+  margin: 10px 16px;
+  width: 170px;
+  height: 47px;
+  padding: 10px, 16px, 10px, 16px;
+  border-radius: 12px;
+  border: 1px solid var(--color-black);
+  /* gap: 10px; */
+  background-color: var(--color-black);
+  color: var(--color-primary);
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0.25px;
+  text-align: center;
+}
