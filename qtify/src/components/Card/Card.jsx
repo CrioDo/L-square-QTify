@@ -9,6 +9,7 @@ function Card({data ,type}){
                 const {image,follows,title,slug,songs} = data;
                 return (
                     <Tooltip title={`${songs.length} songs`} placement="top" arrow> 
+                    <a href={`/album/${slug}`} style={{textDecoration:"none"}}>
                         <div className={styles.wrapper}>
                             <div className={styles.card}>
                                 <img src={image} alt='album'/>
@@ -23,6 +24,7 @@ function Card({data ,type}){
                                 <p>{title}</p>
                             </div>
                         </div>
+                        </a>
                     </Tooltip>
                 )
             }
