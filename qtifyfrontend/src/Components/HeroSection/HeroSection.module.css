@@ -1,11 +1,12 @@
 .heroContainer {
-  width: 103.5%;
+  width: 100vw;
   height: 270px;
   background-color: var(--color-black);
   color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0px 32px;
 
   font-family: Poppins;
   font-size: 20px;
