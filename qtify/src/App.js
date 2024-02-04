@@ -7,12 +7,12 @@ import Section from './components/Section/Section';
 
 function App() {
   
-  const [topAlbumsData, setTopAlbumsData] = useState([])
+  const [topAlbums, setTopAlbums] = useState([])
 
   const generateTopAlbums = async() => {
     try{
       const data = await fetchTopAlbums()
-      setTopAlbumsData(data)
+      setTopAlbums(data)
     }catch(err){
       console.log(err.message)
     }
@@ -28,7 +28,7 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
-      <Section data={topAlbumsData} title="Top Albums" type="album"/>
+      <Section data={topAlbums} title="Top Albums" type="album"/>
     </>
   );
 }
