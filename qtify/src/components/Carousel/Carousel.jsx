@@ -4,7 +4,7 @@ import  {Swiper,useSwiper, SwiperSlide} from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import CarouselRightNavigation from './CarouselRightNavigation'
 import CarouselLeftNavigation from './CarouselLeftNavigation'
-
+import 'swiper/css'
 
 
 
