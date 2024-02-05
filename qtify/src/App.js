@@ -26,7 +26,7 @@ function App() {
   //   </div>
   // );
 
-  const [searchData, useSearchData] = useState();
+//   const [searchData, useSearchData] = useState();
   const [data, setData] = useState({});
   
   const generateData = (key, source) => {
