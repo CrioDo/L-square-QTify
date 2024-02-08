@@ -19,7 +19,7 @@ function CardSection({ data, type, title }) {
             setToggle(!toggle);
           }}
         >
-          {toggle ? " SHOW ALL" : "HIDE "}
+          {toggle ? "Show All" : "Collapse All "}
         </h3>
       </div>
       <div className={styles.cardContainer}>
