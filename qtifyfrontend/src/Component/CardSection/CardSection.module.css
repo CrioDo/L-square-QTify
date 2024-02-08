@@ -49,3 +49,8 @@
   margin: 40px;
   padding-left: 20px;
 }
+
+.tabWrapper {
+  color: var(--color-white);
+  border: 1px solid white;
+}

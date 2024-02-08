@@ -11,6 +11,7 @@ function Home({ data }) {
         <>
           <CardSection data={data.topAlbum} type="album" title="Top Album" />
           <CardSection data={data.newAlbum} type="album" title="New Album" />
+          <CardSection data={data.songs} type="songs" title="Songs" />
         </>
       )}
     </div>

@@ -10,7 +10,7 @@ function Carousel({ data, type }) {
     let swiper = useSwiper();
     console.log(swiper);
     useEffect(() => {
-      swiper.slideTo(0);
+      // swiper.slideTo(0);
     }, [data]);
 
     return <></>;
