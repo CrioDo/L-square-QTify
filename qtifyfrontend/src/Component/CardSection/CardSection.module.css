@@ -1,0 +1,49 @@
+.cardSectionWrapper {
+  border: 1px solid white;
+  /* height: 280px; */
+  background-color: var(--color-black);
+}
+
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+}
+
+.title {
+  color: var(--color-white);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.button {
+  cursor: pointer;
+  color: var(--color-primary);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.cardContainer {
+  color: var(--color-white);
+  border: 1px solid white;
+  background-color: var(--color-black);
+  /* height: 280px; */
+}
+
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  margin: 40px;
+  padding-left: 20px;
+}

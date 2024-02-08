@@ -1,13 +1,32 @@
-import logo from "./logo.svg";
+import { useEffect, useState } from "react";
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar";
-import HeroSection from "./Components/HeroSection/HeroSection";
-
+import Navbar from "./Component/Navbar/Navbar";
+import Home from "./Pages/Home/Home";
+import { Route, Routes } from "react-router-dom";
+import { fetchTopAlbums, fetchNewAlbums } from "./api/api";
 function App() {
+  const [data, setData] = useState({});
+  const generateData = (key, source) => {
+    source().then((res) => {
+      // console.log(res);
+      setData((prevState) => {
+        return { ...prevState, [key]: res };
+      });
+    });
+  };
+  useEffect(() => {
+    generateData("topAlbum", fetchTopAlbums);
+    generateData("newAlbum", fetchNewAlbums);
+  }, []);
+  // useEffect(() => {
+  //   console.log(`Data ==>`, data);
+  // });
   return (
     <div className="App">
       <Navbar />
-      <HeroSection />
+      <Routes>
+        <Route path="/" element={<Home data={data} />} />
+      </Routes>
     </div>
   );
 }

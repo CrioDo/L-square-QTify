@@ -1,0 +1,18 @@
+.navbar {
+  width: 100%;
+  height: 4.625em;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0px 32px; */
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.navbarContainer {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 4.625em;
+  display: flex;
+  flex-wrap: nowrap;
+}
