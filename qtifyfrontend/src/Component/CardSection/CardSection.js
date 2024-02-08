@@ -1,14 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./CardSection.module.css";
 import Card from "./Card/Card";
 import Carousel from "./Carousel/Carousel";
-import Tab from "./Tab/Tab";
+import TabComponent from "./TabComponent/TabComponent";
 
-function CardSection({ data, type, title }) {
-  console.log("data from the card section", data);
-  console.log("type from the card section==>", type);
-
+function CardSection({ data, type, title, filterSources }) {
+  // console.log("data from the card section", data);
+  // console.log("type from the card section==>", type);
+  const [filter, setFilter] = useState([{ key: "all", label: "All" }]);
   const [toggle, setToggle] = useState(true);
+  const [selectedFilterIndex, setSelectedFilterIndex] = useState(0);
+  useEffect(() => {
+    if (filterSources) {
+      filterSources().then((res) => {
+        console.log("data from the CardSection useEffect ==>", res);
+
+        setFilter([...filter, ...res]);
+      });
+    }
+  }, []);
+
+  const cardsToRender = data.filter((card) =>
+    filter.length > 1 && selectedFilterIndex !== 0
+      ? card.genre.key === filter[selectedFilterIndex].key
+      : card
+  );
 
   if (type === "album") {
     return (
@@ -52,7 +68,13 @@ function CardSection({ data, type, title }) {
           <div className={styles.topContainer}>
             <h3 className={styles.title}>{title}</h3>
           </div>
-          <div className={styles.tabWrapper}>{/* <Tab /> */}</div>
+          <div className={styles.tabWrapper}>
+            <TabComponent
+              filter={filter}
+              selectedFilterIndex={selectedFilterIndex}
+              setSelectedFilterIndex={setSelectedFilterIndex}
+            />
+          </div>
           <div className={styles.cardContainer}>
             <Carousel data={data} type={type} />
           </div>

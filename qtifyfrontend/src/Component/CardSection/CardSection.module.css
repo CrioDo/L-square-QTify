@@ -51,6 +51,7 @@
 }
 
 .tabWrapper {
+  margin-top: 15px;
   color: var(--color-white);
   border: 1px solid white;
 }

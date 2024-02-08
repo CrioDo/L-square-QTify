@@ -31,7 +31,7 @@ function Carousel({ data, type }) {
           data.map((ele, index) => {
             // console.log("DATA from carasoul slide ==>", ele);
             return (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <Card key={index} data={ele} type={type} />
               </SwiperSlide>
             );

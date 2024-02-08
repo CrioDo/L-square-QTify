@@ -19,9 +19,8 @@ function App() {
     generateData("newAlbum", fetchNewAlbums);
     generateData("songs", fetchSongs);
   }, []);
-  // useEffect(() => {
-  //   console.log(`Data ==>`, data);
-  // });
+
+  const { topAlbum = [], newAlbums = [], songs = [] } = data;
   return (
     <div className="App">
       <Navbar />

@@ -3,7 +3,7 @@ import Chip from "@mui/material/Chip";
 import styles from "./Card.module.css";
 import { Tooltip } from "@mui/material";
 function Card({ data, type }) {
-  console.log("Data from Card", data);
+  // console.log("Data from Card", data);
   const getCard = (type) => {
     switch (type) {
       case "album": {
@@ -34,17 +34,21 @@ function Card({ data, type }) {
         );
       }
       case "songs": {
-        // const { title, likes, image } = data;
+        const { title, likes, image } = data;
         return (
           <div className={styles.wrapper}>
             <div className={styles.card}>
-              <img src={""} alt="song" loading="lazy" />
+              <img src={image} alt="song" loading="lazy" />
               <div className={styles.banner}>
-                <Chip label={` Likes`} size="small" className={styles.chip} />
+                <Chip
+                  label={` ${likes} Likes`}
+                  size="small"
+                  className={styles.chip}
+                />
               </div>
             </div>
             <div className={styles.titleWrapper}>
-              <p>{"title"} </p>
+              <p>{title} </p>
             </div>
           </div>
         );

@@ -29,7 +29,8 @@ export const fetchNewAlbums = async () => {
 export const fetchSongs = async () => {
   try {
     let response = await axios.get(`${BASE_URL}/songs`);
-    // console.log(response.data);
+
+    console.log("fetch songs====>", response.data);
 
     return response.data;
   } catch (err) {
