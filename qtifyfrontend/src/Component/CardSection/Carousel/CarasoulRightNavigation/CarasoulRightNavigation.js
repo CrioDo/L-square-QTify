@@ -9,7 +9,7 @@ function CarasoulRightNavigation() {
     swiper.on("slideChange", function () {
       setIsEnd(swiper.isEnd);
     });
-  }, []);
+  }, [swiper]);
   return (
     <div className={styles.rightNavigation}>
       {!isEnd && (

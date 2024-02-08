@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./Component/Navbar/Navbar";
 import Home from "./Pages/Home/Home";
 import { Route, Routes } from "react-router-dom";
-import { fetchTopAlbums, fetchNewAlbums } from "./api/api";
+import { fetchTopAlbums, fetchNewAlbums, fetchSongs } from "./api/api";
 function App() {
   const [data, setData] = useState({});
   const generateData = (key, source) => {
@@ -17,6 +17,7 @@ function App() {
   useEffect(() => {
     generateData("topAlbum", fetchTopAlbums);
     generateData("newAlbum", fetchNewAlbums);
+    generateData("songs", fetchSongs);
   }, []);
   // useEffect(() => {
   //   console.log(`Data ==>`, data);

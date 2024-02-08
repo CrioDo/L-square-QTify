@@ -1,7 +1,7 @@
 import React from "react";
 import HeroSection from "../../Component/HeroSection/HeroSection";
 import CardSection from "../../Component/CardSection/CardSection";
-import Carousel from "../../Component/CardSection/Carousel/Carousel";
+
 function Home({ data }) {
   console.log("data from the home", data);
   return (

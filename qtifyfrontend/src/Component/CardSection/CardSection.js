@@ -7,7 +7,7 @@ function CardSection({ data, type, title }) {
   console.log("data from the card section", data);
   console.log("type from the card section==>", type);
 
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   return (
     <div className={styles.cardSectionWrapper}>

@@ -20,14 +20,14 @@ function Carousel({ data, type }) {
       <Swiper
         initialSlide={0}
         modules={{ Navigation }}
-        slidesPerView={6}
-        spaceBetween={10}
+        slidesPerView={10}
+        spaceBetween={0}
         allowTouchMove
       >
         <Controls data={data} />
         <CarasoulLeftNavigation />
         <CarasoulRightNavigation />
-        {data.length > 0 &&
+        {data &&
           data.map((ele, index) => {
             // console.log("DATA from carasoul slide ==>", ele);
             return (

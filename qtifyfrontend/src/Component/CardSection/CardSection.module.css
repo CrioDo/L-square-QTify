@@ -1,7 +1,9 @@
 .cardSectionWrapper {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   /* height: 280px; */
   background-color: var(--color-black);
+  border-bottom: 1px solid var(--color-primary);
+  border-top: 1px solid var(--color-primary);
 }
 
 .topContainer {
@@ -35,7 +37,7 @@
 
 .cardContainer {
   color: var(--color-white);
-  border: 1px solid white;
+  /* border: 1px solid white; */
   background-color: var(--color-black);
   /* height: 280px; */
 }
@@ -43,7 +45,7 @@
 .cardWrapper {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin: 40px;
   padding-left: 20px;
 }
