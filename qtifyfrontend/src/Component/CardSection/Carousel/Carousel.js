@@ -20,7 +20,7 @@ function Carousel({ data, type }) {
       <Swiper
         initialSlide={0}
         modules={{ Navigation }}
-        slidesPerView={7}
+        slidesPerView={"auto"}
         spaceBetween={0}
         allowTouchMove
       >
