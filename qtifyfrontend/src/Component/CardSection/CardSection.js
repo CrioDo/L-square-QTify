@@ -69,11 +69,11 @@ function CardSection({ data, type, title, filterSources }) {
             <h3 className={styles.title}>{title}</h3>
           </div>
           <div className={styles.tabWrapper}>
-            <TabComponent
+            {/* <TabComponent
               filter={filter}
               selectedFilterIndex={selectedFilterIndex}
               setSelectedFilterIndex={setSelectedFilterIndex}
-            />
+            /> */}
           </div>
           <div className={styles.cardContainer}>
             <Carousel data={data} type={type} />
