@@ -1,7 +1,8 @@
 .button {
-    background-color: var(--black-color);
+    /* background-color: var(--black-color); */
+    background-color: black;
     /* color: var(--primary-color); */
-    color: green;   /* Change text color to green */
+    color : green ; /* set text color to green */
     padding: 10px 16px;
     border: 1px solid #34c94b;
     border-radius: 12px;
@@ -11,7 +12,7 @@
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.25px;
-    transition: background-color 0.3s;  /* Optional: Add transition for smooth hover effect */
+    font-family: 'Poppins', sans-serif; /* set font family to 'poppins' */
   }
 
   .button:hover {
