@@ -1,8 +1,8 @@
 .button {
     /* background-color: var(--black-color); */
     background-color: black;
-    /* color: var(--primary-color); */
-    color : green ; /* set text color to green */
+    color: var(--primary-color);
+    color : green ;  /*set text color to green*/
     padding: 10px 16px;
     border: 1px solid #34c94b;
     border-radius: 12px;
