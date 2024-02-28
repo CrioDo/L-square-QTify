@@ -1,0 +1,23 @@
+.hero{
+    height: 270px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head{
+    margin-right: 20px;
+    font-weight: 600;
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.img{
+    height: 212px;
+    width: 212px;
+    margin-left: 20px;
+}
