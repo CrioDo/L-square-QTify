@@ -1,0 +1,9 @@
+.RightBtn {
+    position: absolute;
+    top: 40%;
+    right: 0px;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    display: inline;
+  }
