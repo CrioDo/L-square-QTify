@@ -1,0 +1,8 @@
+.right {
+    display: flex;
+    justify-content: flex-end;
+    position:absolute;
+    top:30%;
+    z-index:3;
+    right: 10px;
+}
