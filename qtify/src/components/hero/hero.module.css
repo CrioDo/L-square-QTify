@@ -1,33 +1,9 @@
-.heroBox {
-    background-color: #121212;
-    height: 270px;
-    margin-top: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .heroContent {
-    display: flex;
-    width: 55.5vw;
-    height: 212px;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .heroText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 570px;
-    height: 100px;
-    color: #ffffff;
-    line-height: 48px;
-    text-align: center;
-    font-weight: 600;
-    font-family: "Poppins";
-    font-size: 32px;
-  }
-  .heroImg {
-    height: 212px;
-    width: 212px;
-  }
+.hero {
+  display:flex;
+  justify-content: center;
+  background-color: #121212;
+  color: #ffffff;
+  padding: 60px;
+  padding-bottom:0px;
+  
+}

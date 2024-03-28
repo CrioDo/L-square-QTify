@@ -1,0 +1,20 @@
+.title {
+    display:flex;
+    justify-content: space-between;
+    background-color:#121212 ;
+    color:#ffffff ;
+    padding-left:10px ;
+}
+.textcolor {
+    color:#34c94b;
+    padding-right: 30px;
+  
+}
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 6 cards in each row */
+    gap: 10px; /* Adjust spacing between cards */
+    
+    background-color: #121212;
+   
+}

@@ -1,34 +1,45 @@
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {StyledEngineProvider} from '@mui/material/styles';
-import Navbar from "./components/Navbar/Navbar";
-import HomePage from "./pages/homePage.jsx";
-import { useState } from "react";
-import Player from "./components/musicPlayer/Player";
-import { Outlet } from "react-router-dom";
+import Navbar from "./component/Navbar/Navbar"
+// import { Outlet } from 'react-router-dom';
+import { fetchTopAlbums ,fetchNewAlbums,fetchSongs} from './component/Api/Api';
+import HomePage from './component/Pages/HomePage';
+// import Hero from "./component/Hero/Hero"
+
 
 
 function App() {
-  let [songData, setSongData] = useState({
-    id: 11111,
-    img: "https://picsum.photos/200/200",
-    duration: 0,
-    songName: "",
-    albumName: "",
-    songURL: "",
-  });
+  const [data,setdata]=useState({});
+// const generatedata=(topAlbums,fetchTopAlbums)
+const generatedata=(key,fun)=>{
+  fun().then((Data)=>{//in Data has the output of function
+    setdata((prevstate)=>{
+      return {...prevstate,[key]:Data}//{{key1:value1},{key2,value2}}
+    })
+  }
+  )}
 
 
+// Again destructurind the Data in the setdata
+//in data have object so we are assigning to array --array of object
+const {topAlbums=[],newAlbums=[],songs=[]}=data
 
+//has array of obj [{},{}]
+
+
+useEffect(()=>{
+  generatedata("topAlbums",fetchTopAlbums);
+  generatedata("newAlbums",fetchNewAlbums);
+  generatedata("songs",fetchSongs);
+
+
+},[]);
   return (
     <div>
       {/* StyledEngineProvider give more priority for material ui css then add the custom css */}
        <StyledEngineProvider injectFirst> 
        <Navbar/>
-       <HomePage/>
-       <Outlet context={[songData, setSongData]} />
-        <Player data={songData} />
-       
+       <HomePage data={{topAlbums,newAlbums,songs}}/>
       </StyledEngineProvider>
 
     
