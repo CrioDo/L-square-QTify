@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {StyledEngineProvider} from '@mui/material/styles';
-import Navbar from "./component/Navbar/Navbar"
+import Navbar from "./components/Navbar/Navbar"
 // import { Outlet } from 'react-router-dom';
 import { fetchTopAlbums ,fetchNewAlbums,fetchSongs} from './component/Api/Api';
 import HomePage from './component/Pages/HomePage';
