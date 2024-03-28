@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import {StyledEngineProvider} from '@mui/material/styles';
 import Navbar from "./components/Navbar/Navbar"
 // import { Outlet } from 'react-router-dom';
-import { fetchTopAlbums ,fetchNewAlbums,fetchSongs} from './component/Api/Api';
-import HomePage from './component/Pages/HomePage';
-// import Hero from "./component/Hero/Hero"
+import { fetchTopAlbums ,fetchNewAlbums,fetchSongs} from './components/Api/Api';
+import HomePage from './components/Pages/HomePage';
+// import Hero from "./components/Hero/Hero"
 
 
 

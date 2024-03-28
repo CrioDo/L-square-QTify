@@ -1,8 +1,8 @@
 import Hero from "../Hero/Hero"
 import React from "react"
-import {fetchFilters,fetchSongs} from "../../component/Api/Api"
+import {fetchFilters,fetchSongs} from "../../components/Api/Api"
 //import {useOutletContext} from "react-router-dom"
-import Section from "../../component/Section/Section"
+import Section from "../../components/Section/Section"
 import Songs from "../Songs/Songs"
 const HomePage=({data})=>{
     // const data=useOutletContext();
