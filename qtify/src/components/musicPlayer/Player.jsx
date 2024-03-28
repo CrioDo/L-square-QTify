@@ -1,8 +1,7 @@
-import { useOutletContext } from "react-router-dom";
 import "./styles.css";
 import { useEffect, useState } from "react";
 import useSound from "use-sound";
-import qala from "../../assets/song1.mp3";
+import qala from "../../assets/song.svg";
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai";
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi";
 import { IconContext } from "react-icons";
@@ -67,7 +66,7 @@ export default function Player({ data }) {
     <div className="container">
       <div className="component">
         <div className="imgDiv">
-          <img className="musicCover" src={data.img} />
+          <img className="musicCover" alt="musiccover" src={data.img} />
           <div>
             <h3 className="title">
               {data.songName ? data.songName : "Song Name"}

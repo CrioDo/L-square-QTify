@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./pages/homePage.jsx";
 import { useState } from "react";
 import Player from "./components/musicPlayer/Player";
-import AlbumContainer from "./components/albumContainer/albumContainer";
 import { Outlet } from "react-router-dom";
 
 

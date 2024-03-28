@@ -1,4 +1,3 @@
-import heroImg from "../../assets/hero_headphones.png";
 import styles from "./hero.module.css";
 export default function HeroSection({ textLine1, textLine2, image }) {
   return (
@@ -11,7 +10,7 @@ export default function HeroSection({ textLine1, textLine2, image }) {
           <div>{textLine2}s</div>
         </div>
 
-        <img src={image} alt="hero image" className={styles.heroImg} />
+        <img src={image} alt="heroimage" className={styles.heroImg} />
       </div>
     </div>
   );
