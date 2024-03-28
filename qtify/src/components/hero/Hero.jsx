@@ -1,6 +1,6 @@
 import React from 'react';
 import stylehero from "./Hero.module.css"
-import heroimg from "../../assets/hero.png"
+import heroimg from "../../assets/hero.svg"
 const Hero=()=>{
     return (
         <div className={stylehero.hero}>
