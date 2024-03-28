@@ -1,6 +1,6 @@
 import HeroSection from "../components/hero/HeroSection";
 import AlbumContainer from "../components/albumContainer/albumContainer";
-import heroImg from "../assets/hero_headphones.png";
+import heroImg from "../assets/hero_headphones.svg";
 
 import TestSong from "../components/songsSection/testSongs";
 import TabTesting from "../components/songsSection/tabs";
