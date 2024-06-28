@@ -1,0 +1,27 @@
+.sectionTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.toggleText{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.sectionInnerWrapper{
+    margin-top: 18px;
+}
+
+.showAllWrapper{
+    gap: 40px; /*got it from figma*/
+    display: flex;
+    flex-wrap: wrap;  /*"flex-wrap: wrap;" specifies that the flex items(cards here) will wrap(will get adjust to new line) if necessary, Try resizing the browser's window to visualize*/
+}
+
+.progressBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}

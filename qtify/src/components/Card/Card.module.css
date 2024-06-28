@@ -1,0 +1,69 @@
+.wrapper{
+ width: 160px;
+ /* height: 232px; */
+}
+
+.card{
+    position: relative;
+    height: 205px;
+    width: 160px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.banner{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+.banner .chip{
+        background-color: var(--color-black);
+        color: var(--color-white);
+}
+
+/* alternative of above chip, a pill */
+.pill{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 15px;
+    padding: 6px;
+    font-size: 12px;
+    width: max-content;
+
+}
+
+.titleWrapper{
+    margin-top: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 
+Notes:
+
+1. In above CSS, overflow: hidden; is applied to the .card class. This ensures that any content within the card that exceeds the specified height 
+    and width of the card will be clipped and not displayed outside of its bounds. This is useful for maintaining the 
+    desired appearance of the card, especially if there are child elements positioned absolutely (like your .banner).
+
+2. position: absolute;: This property positions the .banner element absolutely relative to its 
+   closest positioned ancestor (in this case, the .card element). This allows the banner to be positioned at the bottom of the .card element.
+
+3. .chip { ... }: This is a nested CSS rule that applies styles specifically to elements with the class .chip that are descendants of the .banner element. 
+   In this case, it sets the background color of .chip elements to black and the text color to white.
+
+4. titleWrapper class: 
+    a.) overflow: hidden;: This property specifies what should happen if the content inside the .titleWrapper exceeds the dimensions of its container. 
+        In this case, if the content overflows the container vertically(or in any direction), it will be clipped and hidden from view.
+
+    b.) text-overflow: ellipsis;: This property specifies how to handle text that overflows the container horizontally. 
+        When the text exceeds the width of its container, an ellipsis (...) is displayed at the end of the line to indicate
+         that there is more content that is not visible. This is useful for truncating long titles and indicating to users that there 
+         is more text than what is currently displayed.
+ */

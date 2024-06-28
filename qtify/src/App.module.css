@@ -1,0 +1,7 @@
+.sectionWrapper{
+  padding: 0px 60px 30px; /*top padding is 0px, right and left paddings are 30px, bottom padding is 60px*/
+  display: flex;
+  flex-direction: column;
+  gap:32px; /*(got it from figma) in CSS, it Set the gap between rows and between columns to 50px, also there are row-gap and column-gap props*/
+
+}

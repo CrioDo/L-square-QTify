@@ -1,0 +1,31 @@
+.wrapper{
+display: flex;
+flex-direction: row;
+align-items: center;
+height: 48px;
+/* justify-content: center; */
+}
+
+/* all height,length dimentions are coming from figma design */
+.search{
+width: 502px;
+height: 100%;
+border: 1px solid var(--color-black);
+border-radius: 8px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+padding: 14px 20px;
+}
+
+.searchButton{
+    /* width: 66px; */
+        border-radius: 0px 8px 8px 0px;
+      border-left: none;
+     /*or you can write-> border-radius:border-radius: 8px;
+                            border-top-left-radius: 0px;
+                            border-bottom-left-radius: 0px; */
+    border: 1px solid var(--color-black);
+    height: 100%;
+    cursor: pointer;
+    padding: 14px 20px;  /*top and bottom paddings are 14px + right and left paddings are 20px*/
+}

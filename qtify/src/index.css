@@ -1,0 +1,48 @@
+/* The :root selector in CSS is a pseudo-class that represents the highest-level parent element, which is usually the <html> element. 
+It is commonly used to define global CSS variables (custom properties) that can be reused throughout the stylesheet. */
+:root {
+  --color-primary: #34c94b;
+  --color-white: #ffffff;
+  --color-black: #121212;
+}
+
+/*   The * selector is a universal selector that targets all elements on the page. Pseudo-elements in CSS are used to style parts of an element or create additional content. They are denoted by the :: syntax
+Adding *::before and *::after extends the selection to include their respective pseudo-elements. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* refer INTV-1 NOTES */
+
+* {
+  margin: 0;
+}
+
+html,body {
+  height: 100%;
+}
+
+
+body {
+  background-color: var(--color-black);   /*now use above 3 theme colours as a variable in whole project's css*/
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+img,svg{
+  display: block;
+  /* align-items: center; */
+  max-width: 100%;
+  /* margin: 5px; */
+}
+
+/* 
+overwrite the default css of the swiper-slide provided by swiper
+by default -> width: 100%;
+ */
+.swiper-slide{
+  width: auto !important;
+}

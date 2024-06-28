@@ -1,0 +1,9 @@
+.leftNavigation{
+    position: absolute;
+    /* background-color: red; */
+    left: 10px;
+    top: 40%;
+    z-index: 10;
+    transform: translateY(-50%);
+    cursor: pointer;
+   }

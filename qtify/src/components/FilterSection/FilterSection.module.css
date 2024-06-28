@@ -1,0 +1,23 @@
+.wrapper{
+    /* display: flex;
+    height: 380px;
+    flex-direction: column;
+    padding-left: 32px;
+    padding-top: 10px; */
+}
+
+.heading{
+    display: flex;
+    justify-content:left;
+    align-items: baseline;
+}
+
+.progressBar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardsWrapper{
+    margin-top: 30px;
+}
