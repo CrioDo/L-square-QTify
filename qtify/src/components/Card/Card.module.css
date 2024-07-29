@@ -1,0 +1,48 @@
+.card {
+  width: 159px;
+  height: 232px;
+}
+.card img {
+  border-radius: 10px 10px 0px 0px;
+  width: 159px;
+  height: 170px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.content {
+  border-radius: 10px 10px 10px 10px;
+  background-color: var(--color-white);
+  width: 159px;
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chip {
+  background-color: var(--color-black);
+  width: 80px;
+  height: 23px;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+  color: var(--color-white);
+  gap: 1px;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 6px;
+}
+
+.title {
+  color: var(--color-white);
+  width: 105px;
+  height: 21px;
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  padding-top: 6px;
+}

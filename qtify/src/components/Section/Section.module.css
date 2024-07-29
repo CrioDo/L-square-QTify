@@ -1,0 +1,8 @@
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 24px;
+}
+.filterSection {
+}
