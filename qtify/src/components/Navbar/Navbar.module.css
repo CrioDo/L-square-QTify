@@ -1,0 +1,8 @@
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary);
+    height: 74px;
+    padding: 0 32px;
+}

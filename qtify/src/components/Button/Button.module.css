@@ -1,0 +1,34 @@
+.button {
+    font-family: Poppins;
+    padding: 10px 16px ;
+    border-radius: 12px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:active{
+    transform: scale(0.98); 
+}
+
+.primary {
+    background-color: var(--color-primary);
+    color: var(--color-white)
+}
+
+.secondary {
+    background-color: var(--color-black);
+    color: var(--color-primary)
+}
+
+.m{
+    height: 27px;
+}
+
+.l {
+    height: 33px;
+}
