@@ -1,0 +1,16 @@
+.text {
+    height: 100px;
+    width: 556px;
+    color: var(--color-white);
+    line-height: 48px;
+    font-size: 32px;
+    font-family: 'poppins';
+    font-weight: 600;
+    word-spacing: normal;
+    letter-spacing: 1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

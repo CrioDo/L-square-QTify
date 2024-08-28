@@ -1,0 +1,22 @@
+.search {
+    padding-left: 20px;
+    margin: 0px;
+    height: 100%;
+    width: 502px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-black);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: var(--color-white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 0.2px;
+    
+    
+    /* font-family: 'Lato'; */
+}
+
+input:focus {
+    outline: none;
+}

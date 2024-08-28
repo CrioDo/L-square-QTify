@@ -1,0 +1,66 @@
+.section_body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-black);
+    padding: 24px 32px 20px 32px;
+    box-sizing: border-box;
+}
+
+.heading_button_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--color-white);
+    letter-spacing: 1px;
+}
+
+.button {
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--color-primary);
+    letter-spacing: 1px;
+    background-color: var(--color-black);
+    border: none;
+    cursor: pointer;
+}
+
+.card_grid {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 40px;
+    /* column-gap: calc(); */
+    box-sizing: border-box;
+}
+
+.hr {
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-primary);
+    margin: 0px;
+    border: none;
+}
+
+.tabs_container {
+    padding-bottom: 23px;
+}
+
+.tab_button {
+    font-family: poppins !important;
+    color: var(--color-white) !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 24px !important;
+}

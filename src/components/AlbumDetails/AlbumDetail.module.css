@@ -1,0 +1,91 @@
+.album_wrapper {
+    height: 461px;
+    background-color: var(--color-black);
+    padding-top: 24px;
+    padding-left: 80px;
+    padding-bottom: 12px;
+}
+
+.arrow_button {
+    height: 40px;
+    width: 40px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.arrow {
+    height: 18px;
+    width: 16px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 400;
+}
+
+.album_detail {
+    display: flex;
+    padding-top: 30px;
+    gap: 60px;
+    align-items: center;
+}
+
+.image img {
+    height: 329px;
+    width: 288px;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.details {
+    font-family: 'poppins';
+    color: var(--color-white);
+    letter-spacing: 0.25px;
+}
+
+.details h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    margin: 0px 0px 8px;
+}
+
+.details h3, .details_duration_follow h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0px 0px 8px;
+}
+
+.details_duration_follow {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: start;
+}
+
+.details_button {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.shuffle_button {
+    background-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
+    text-transform: none !important;
+    border-radius: 12px !important;
+}
+
+.addToLibraray_button {
+    background-color: var(--color-black) !important;
+    color: var(--color-primary) !important;
+    text-transform: none !important;
+    border: 1px solid var(--color-primary) !important;
+    border-radius: 12px !important;
+}

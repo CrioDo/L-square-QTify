@@ -1,0 +1,84 @@
+.navbar {
+    background-color: var(--color-primary);
+    height: 74px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 32px;
+    box-sizing: border-box;
+}
+
+
+/* styles for modal form */
+.modal_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-white) ;
+    border-radius: 10px;
+    box-shadow: 24;
+    padding: 0px 32px 16px;
+}
+
+.modal_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal_header h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'poppins';
+}
+
+.close_button {
+    height: 16px;
+    width: 10px;
+    border: none;
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+
+.form_box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.form_box input, textarea {
+    height: 38px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    background-color: var(--color-white);
+    font-family: 'poppins';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-left: 12px;
+}
+
+input, textarea:focus {
+    outline: none;
+}
+
+.submit_button {
+    height: 47px;
+    width: 170px;
+    border: 1px solid var(--color-primary);
+    border-radius: 12px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: .25px;
+    cursor: pointer;
+    font-family: 'Poppins';
+}

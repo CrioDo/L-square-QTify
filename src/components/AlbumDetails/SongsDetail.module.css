@@ -1,0 +1,85 @@
+.song_detail_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: 'poppins';
+    font-weight: 400;
+}
+
+.image_song_name_box {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: start;
+    gap: 14px;
+}
+
+.image_song_name_box img {
+    height: 64px;
+    width: 59px;
+    border-radius: 4px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.song_detail_body h3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.songs_list_body {
+    background-color: var(--color-black);
+    padding-left: 80px;
+    padding-right: 65px;
+}
+
+.artist_name {
+    display: flex;
+    width: 40%;
+    justify-content: start;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-white);
+}
+
+.header_items {
+    display: flex;
+    width: 40%;
+    justify-content: start;
+}
+
+.pagination_outer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: var(--color-black);
+    padding-left: 80px;
+    padding-right: 65px;
+}
+
+.pagination button {
+    color: var(--color-white);
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.pagination svg {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-radius: 50%;
+}
+
+.pagination button:focus {
+    background-color: var(--color-primary) !important;
+}

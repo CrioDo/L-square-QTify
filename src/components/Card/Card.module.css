@@ -1,0 +1,54 @@
+.card_body {
+    height: 232px;
+    width: 159px;
+    background-color: var(--color-black);
+    box-sizing: border-box;
+}
+
+.image_follow_container {
+    width: 100%;
+    height: 205px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.follows {
+    width: 100%;
+    height: 35px;
+    background-color: var(--color-white);
+}
+
+.chip {
+    height: 23px !important;
+    margin-top: 6px !important;
+    margin-left: 8px !important;
+    background-color: var(--color-black) !important;
+    color: var(--color-white) !important;
+    border-radius: 10px !important;
+
+    /* figma style for chip text */
+    /* padding: 4px 8px;
+    font-size: 10px;
+    font-family: poppins;
+    font-weight: 400; */
+}
+
+.album_name {
+    width: 100%;
+    height: 27px;
+    margin-top: 6px;
+    padding-left: 2px;
+
+    line-height: 21px;
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    letter-spacing: 0.25px;
+}

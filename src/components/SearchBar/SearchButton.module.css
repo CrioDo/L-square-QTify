@@ -1,0 +1,15 @@
+.icon_button {
+    width: 66px;
+    height: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-black);
+    border-left: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--color-white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
