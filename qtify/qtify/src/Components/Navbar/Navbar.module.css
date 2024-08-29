@@ -1,0 +1,31 @@
+.nav {
+  background-color: var(--color-primary);
+  height: 74px;
+  width: 100vw;
+  padding: 0px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+.logoDiv{
+  display: flex;
+  margin: 14px;
+}
+
+
+nav {
+  background-color: var(--css-primary);
+  width: 100%;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
