@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cardsWrapper {
+  padding-top: 18px;
+}
+.wrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.toggleText {
+  cursor: pointer;
+  color: var(--color-primary);
+}

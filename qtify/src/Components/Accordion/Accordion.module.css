@@ -1,0 +1,41 @@
+
+h1{
+    font-family: Poppins;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.accordionBlock{
+    width: 80%;
+}
+.questions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+    background-color: var(--color-black);
+    margin: 0,auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    
+}
+.questions p{
+    font-family: Poppins;
+    color: var(--color-white);
+    font-size: 27px;
+}
+.answers{
+    background-color: var(--color-white);
+    
+}
+.answers p{
+    font-family: Poppins;
+    font-size: 27px;
+    color: black;
+    
+}
