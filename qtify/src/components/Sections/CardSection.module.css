@@ -1,0 +1,49 @@
+.Cardcontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .cardGrid {
+    display: grid;
+    padding: 20px 0;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .albumContainer {
+    position: relative;
+  }
+  
+  .sectionTitle {
+    margin: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .seeAllButton {
+    margin: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-primary);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .seeAllButton:hover {
+    color: var(--white);
+  }
+  .tabContainer{
+    padding: 2px 40px 1.5rem;
+
+  }
+  

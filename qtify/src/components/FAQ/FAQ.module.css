@@ -1,0 +1,39 @@
+
+.faqContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.faqTitle{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--white);
+}
+.faqItem{
+    width: 80%;
+}   
+.accordion{
+    background-color: var(--black);
+}
+.AccordionRoot{
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.question{
+    padding: 8px 0px;
+    font-size: 18px !important;
+}
+.questionContainer{
+    font-weight: 600 !important;
+    color: white !important;
+    border: 0.5px solid var(--white) !important;
+    background-color: black !important;
+    border-radius: 10px !important;
+}
+.answerContainer{
+    color: black !important;
+    border-radius: 10px !important;
+    background-color: white !important;
+}

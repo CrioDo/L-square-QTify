@@ -1,0 +1,14 @@
+.feedbackButton{
+    background-color: var(--black);
+    border: none;
+    font-family: Poppins,sans-serif;
+    border-radius: 10px;
+    color: var(--color-primary);
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 25px;
+    padding: 10px 20px;
+}
+.feedbackButton:hover{
+    color: var(--white);
+}

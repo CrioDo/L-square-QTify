@@ -1,0 +1,23 @@
+.carouselWrapper {
+    position: relative;
+  }
+
+  .leftNav,
+  .rightNav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    z-index: 10;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  
+  .leftNav {
+    left: 20px;
+  }
+  
+  .rightNav {
+    right: 20px;
+  }
+  
