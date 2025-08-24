@@ -1,0 +1,49 @@
+.section{
+    max-width: 1920px;
+    margin:0 auto 20px;
+    padding:0 30px 20px;
+    border-bottom: 1px solid var(--color-primary);
+}
+.title_container{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    margin-bottom:12px;
+}
+.title{
+    color:var(--color-white);
+    font-size:20px;
+}
+.button{
+    color: var(--color-primary);
+    background: rgba(0,0,0,0);
+    padding: 0;
+    border:0;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+}
+.loading{
+    color:#fff;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.filters{
+    margin-bottom:16px;
+}
+.filters button{
+    color:var(--color-white);
+    font-family: var(--font-body);
+    text-transform: none;
+    font-size: 16px;
+    padding:8px 10px;
+    min-width: 70px;
+    font-weight: 600;
+}

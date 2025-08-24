@@ -1,0 +1,104 @@
+.searchbar {
+    display: flex;
+    border: 1px solid var(--color-dark);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+    align-items: center;
+}
+
+.searchbar input {
+    border: 0;
+    height: 48px;
+    padding: 0 12px;
+    font-size: 16px;
+    flex: 1;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    color: var(--color-dark);
+    outline: 0;
+}
+
+.searchbar input::placeholder {
+    color: var(--color-dark);
+}
+
+.searchbar button {
+    border: 0;
+    border-left: 1px solid var(--color-dark);
+    background: var(--color-white);
+    height: 48px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.searchResults {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 720px;
+    width: 90%;
+    background: #1A1A1A;
+    border: 1px solid var(--color-primary);
+    border-top: 0;
+    padding: 22px;
+    z-index: 999;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.searchResults::-webkit-scrollbar {
+    width: 12px;
+}
+
+.searchResults::-webkit-scrollbar-track {
+    background:#000;
+}
+
+.searchResults::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+
+.albumCard {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.albumCard img {
+    height: 70px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.albumCard>div {
+    flex-grow: 1;
+}
+
+.albumCard h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.albumCard p {
+    font-size: 12px;
+}
+
+.follows {
+    flex-shrink: 0;
+}

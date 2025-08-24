@@ -1,0 +1,24 @@
+.prev,
+.next{
+    position: absolute;
+    background: rgba(0,0,0,0);
+    padding: 0;
+    border:0;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+.prev[disabled],
+.next[disabled]{
+    opacity: 0;
+}

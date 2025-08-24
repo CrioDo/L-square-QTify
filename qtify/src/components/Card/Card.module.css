@@ -1,0 +1,31 @@
+.card {
+    width: 159px;
+}
+
+.banner {
+    background: var(--color-white);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.banner img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.chip {
+    margin: 6px;
+    background-color: var(--color-dark) !important;
+    color: #fff !important;
+}
+
+.card p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
