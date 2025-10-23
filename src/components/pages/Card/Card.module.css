@@ -1,0 +1,55 @@
+.card {
+  width: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer {
+  flex: 3;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottomSection {
+  flex: 1;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* Custom Chip Style */
+.chip {
+  background-color:#000000;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 4px 8px 4px 6px;
+  border-radius: 16px;
+  width: fit-content;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 10px 0;
+  text-align:left
+}

@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background-color: #34c94b;
+}
+
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.center {
+  flex: 1;
+}
+
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}

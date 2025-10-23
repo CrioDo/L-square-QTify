@@ -1,0 +1,31 @@
+
+.tabWrapper {
+  margin-bottom: 12px;
+  padding-left: 8px;
+}
+
+.tabsRoot {
+  min-height: 40px;
+}
+
+.tabItem {
+  text-transform: none;
+  font-weight: 600;
+  font-size: 14px;
+  min-width: auto;
+  padding: 6px 12px;
+  margin-right: 8px;
+  border-radius: 20px;
+  background: transparent;
+  color: #bdbdbd; 
+}
+
+
+.tabItem[aria-selected="true"] {
+  color: #ffffff;
+  background: linear-gradient(90deg,#7b61ff,#46d0ff);
+  box-shadow: 0px 6px 12px rgba(79, 60, 255, 0.12);
+}
+.carouselWrapper {
+  padding-top: 12px;
+}

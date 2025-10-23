@@ -1,0 +1,31 @@
+.section {
+  margin: 40px 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.collapseBtn {
+  background: none;
+  border: none;
+  color: #34c94b;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
