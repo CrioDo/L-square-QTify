@@ -1,0 +1,21 @@
+.carouselContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.swiper {
+  flex: 1;
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.slide > * {
+  width: 100%;
+}

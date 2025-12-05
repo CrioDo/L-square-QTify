@@ -1,0 +1,15 @@
+.hero {
+  background-color: #0f0f0f; /* explicit dark background */
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+h1{
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+}

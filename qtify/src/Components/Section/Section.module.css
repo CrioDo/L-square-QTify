@@ -1,0 +1,66 @@
+/* Section component styling */
+.section {
+  padding: 40px 20px;
+  background-color: #0f0f0f;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+.collapseButton {
+  background: transparent;
+  border: none;
+  color: #2ecc71;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.collapseButton:hover {
+  opacity: 0.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 24px;
+  row-gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+
+.loading,
+.error {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.error {
+  color: #ff6b6b;
+}

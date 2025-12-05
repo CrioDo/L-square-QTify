@@ -1,0 +1,58 @@
+.songsSection {
+  padding: 40px 20px;
+  background-color: #0f0f0f;
+}
+
+.title {
+  margin: 0 0 28px 0;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+/* Custom Tabs styling */
+.tabs {
+  margin-bottom: 28px !important;
+  border-bottom: 1px solid #404040 !important;
+}
+
+.tabs :global(.MuiTabs-indicator) {
+  background-color: #2ecc71 !important;
+  height: 3px !important;
+}
+
+.tab {
+  color: #ffffff !important;
+  text-transform: capitalize !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  min-width: auto !important;
+  padding: 12px 16px !important;
+  margin-right: 16px !important;
+}
+
+.tab:hover {
+  color: #2ecc71 !important;
+}
+
+.tab.Mui-selected {
+  color: #2ecc71 !important;
+}
+
+.loading,
+.error,
+.noSongs {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.noSongs {
+  color: #b0b0b0;
+}

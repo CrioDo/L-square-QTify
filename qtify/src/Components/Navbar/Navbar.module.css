@@ -1,0 +1,74 @@
+.navbar {
+  /* explicit colors to avoid missing CSS variable issues */
+  background-color: #2ecc71; /* bright green header */
+  height: 64px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 50;
+}
+
+
+.feedbackButton {
+  background-color: #000000 !important; /* pure black background */
+  color: #2ecc71 !important; /* green text */
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  border: 2px solid #2ecc71 !important;
+  padding: 8px 18px !important;
+  border-radius: 18px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 40px !important;
+  min-width: 120px !important;
+  box-shadow: 0 6px 18px rgba(11,11,11,0.25) !important;
+  align-self: center !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease-in-out !important;
+  margin-right: 30px !important;
+}
+
+.feedbackButton:hover {
+  opacity: 0.85;
+}
+
+.leftArea {
+  display: flex;
+  align-items: center;
+  min-width: 140px;
+  padding-left: 6px;
+}
+
+.logoLink {
+  display: inline-flex;
+  align-items: center;
+}
+
+.searchContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightArea {
+  display: flex;
+  align-items: center;
+  min-width: 160px;
+  justify-content: flex-end;
+  padding-right: 8px;
+}
+
+.feedbackButton:focus {
+  outline: none;
+  box-shadow: 0 6px 20px rgba(46,204,113,0.15);
+}
+
+.feedbackButton:hover {
+  transform: translateY(-1px);
+}
