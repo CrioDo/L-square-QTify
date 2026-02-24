@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #34C94B;
+  --color-black: #121212;
+  --color-white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}

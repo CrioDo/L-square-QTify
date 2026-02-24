@@ -1,0 +1,41 @@
+.hero {
+  background-color: var(--color-black);
+  color: white;
+
+  display: flex;
+  align-items: center;
+
+  gap: 40px;             
+  padding: 70px 100px;    
+}
+
+/* Text Block */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer h1 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* First Line */
+.textContainer h1:first-child {
+  font-size: 46px;
+  margin-bottom: 18px;
+}
+
+/* Second Line */
+.textContainer h1:last-child {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* Headphone Image */
+.image {
+  width: 360px;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,15 @@
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-white);
+}
+
+
+.swiper-button-disabled {
+  opacity: 0;
+  pointer-events: none;
+}

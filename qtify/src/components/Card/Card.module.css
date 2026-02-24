@@ -1,0 +1,31 @@
+.card {
+  width: 159px;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+  display: block;
+}
+
+.chip {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: black !important;
+  color: white !important;
+  font-size: 12px !important;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 14px;
+  color: white;
+}

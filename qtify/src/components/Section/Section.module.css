@@ -1,0 +1,29 @@
+.section {
+  padding: 40px;
+  background-color: #121212;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header h2 {
+  color: white;
+}
+
+.toggle {
+  background: none;
+  border: none;
+  color: #34c94b;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(159px, 1fr));
+  gap: 20px;
+}
