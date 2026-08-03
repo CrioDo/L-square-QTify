@@ -1,0 +1,17 @@
+import type { PropsFor, SimpleStyleFunction } from "../style/index.mjs";
+export declare const flexBasis: SimpleStyleFunction<'flexBasis'>;
+export declare const flexDirection: SimpleStyleFunction<'flexDirection'>;
+export declare const flexWrap: SimpleStyleFunction<'flexWrap'>;
+export declare const justifyContent: SimpleStyleFunction<'justifyContent'>;
+export declare const alignItems: SimpleStyleFunction<'alignItems'>;
+export declare const alignContent: SimpleStyleFunction<'alignContent'>;
+export declare const order: SimpleStyleFunction<'order'>;
+export declare const flex: SimpleStyleFunction<'flex'>;
+export declare const flexGrow: SimpleStyleFunction<'flexGrow'>;
+export declare const flexShrink: SimpleStyleFunction<'flexShrink'>;
+export declare const alignSelf: SimpleStyleFunction<'alignSelf'>;
+export declare const justifyItems: SimpleStyleFunction<'justifyItems'>;
+export declare const justifySelf: SimpleStyleFunction<'justifySelf'>;
+declare const flexbox: SimpleStyleFunction<'flexBasis' | 'flexDirection' | 'flexWrap' | 'justifyContent' | 'alignItems' | 'alignContent' | 'order' | 'flex' | 'flexGrow' | 'flexShrink' | 'alignSelf' | 'justifyItems' | 'justifySelf'>;
+export type FlexboxProps = PropsFor<typeof flexbox>;
+export default flexbox;

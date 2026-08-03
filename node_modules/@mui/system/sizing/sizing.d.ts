@@ -1,0 +1,13 @@
+import type { PropsFor, SimpleStyleFunction } from "../style/index.js";
+export declare const width: SimpleStyleFunction<'width'>;
+export declare const maxWidth: SimpleStyleFunction<'maxWidth'>;
+export declare const minWidth: SimpleStyleFunction<'minWidth'>;
+export declare const height: SimpleStyleFunction<'height'>;
+export declare const maxHeight: SimpleStyleFunction<'maxHeight'>;
+export declare const minHeight: SimpleStyleFunction<'minHeight'>;
+export declare const sizeWidth: SimpleStyleFunction<'sizeWidth'>;
+export declare const sizeHeight: SimpleStyleFunction<'sizeHeight'>;
+export declare const boxSizing: SimpleStyleFunction<'boxSizing'>;
+declare const sizing: SimpleStyleFunction<'width' | 'maxWidth' | 'minWidth' | 'height' | 'maxHeight' | 'minHeight' | 'sizeWidth' | 'sizeHeight' | 'boxSizing'>;
+export type SizingProps = PropsFor<typeof sizing>;
+export default sizing;

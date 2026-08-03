@@ -1,0 +1,16 @@
+import type { PropsFor, SimpleStyleFunction } from "../style/index.mjs";
+export declare const gap: SimpleStyleFunction<'gap'>;
+export declare const columnGap: SimpleStyleFunction<'columnGap'>;
+export declare const rowGap: SimpleStyleFunction<'rowGap'>;
+export declare const gridColumn: SimpleStyleFunction<'gridColumn'>;
+export declare const gridRow: SimpleStyleFunction<'gridRow'>;
+export declare const gridAutoFlow: SimpleStyleFunction<'gridAutoFlow'>;
+export declare const gridAutoColumns: SimpleStyleFunction<'gridAutoColumns'>;
+export declare const gridAutoRows: SimpleStyleFunction<'gridAutoRows'>;
+export declare const gridTemplateColumns: SimpleStyleFunction<'gridTemplateColumns'>;
+export declare const gridTemplateRows: SimpleStyleFunction<'gridTemplateRows'>;
+export declare const gridTemplateAreas: SimpleStyleFunction<'gridTemplateAreas'>;
+export declare const gridArea: SimpleStyleFunction<'gridArea'>;
+declare const grid: SimpleStyleFunction<'gap' | 'columnGap' | 'rowGap' | 'gridColumn' | 'gridRow' | 'gridAutoFlow' | 'gridAutoColumns' | 'gridAutoRows' | 'gridTemplateColumns' | 'gridTemplateRows' | 'gridTemplateAreas' | 'gridArea'>;
+export type CssGridProps = PropsFor<typeof grid>;
+export default grid;

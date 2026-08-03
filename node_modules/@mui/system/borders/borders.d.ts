@@ -1,0 +1,17 @@
+import type { PropsFor, SimpleStyleFunction } from "../style/index.js";
+export declare const border: SimpleStyleFunction<"border">;
+export declare const borderTop: SimpleStyleFunction<"borderTop">;
+export declare const borderRight: SimpleStyleFunction<"borderRight">;
+export declare const borderBottom: SimpleStyleFunction<"borderBottom">;
+export declare const borderLeft: SimpleStyleFunction<"borderLeft">;
+export declare const borderColor: SimpleStyleFunction<"borderColor">;
+export declare const borderTopColor: SimpleStyleFunction<"borderTopColor">;
+export declare const borderRightColor: SimpleStyleFunction<"borderRightColor">;
+export declare const borderBottomColor: SimpleStyleFunction<"borderBottomColor">;
+export declare const borderLeftColor: SimpleStyleFunction<"borderLeftColor">;
+export declare const outline: SimpleStyleFunction<"outline">;
+export declare const outlineColor: SimpleStyleFunction<"outlineColor">;
+export declare const borderRadius: SimpleStyleFunction<'borderRadius'>;
+declare const borders: SimpleStyleFunction<'border' | 'borderTop' | 'borderRight' | 'borderBottom' | 'borderLeft' | 'borderColor' | 'borderRadius'>;
+export type BordersProps = PropsFor<typeof borders>;
+export default borders;

@@ -1,0 +1,8 @@
+:root {
+    --color-black: #121212;
+    --color-primary: #34C94B;
+    --color-white: #FFFFFF;
+    --swiper-navigation-size: 15px;
+    --swiper-theme-color: var(--color-white);
+    --swiper-navigation-top-offset: 40%
+}

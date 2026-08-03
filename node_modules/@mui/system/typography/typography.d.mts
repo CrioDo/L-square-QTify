@@ -1,0 +1,13 @@
+import type { PropsFor, SimpleStyleFunction } from "../style/index.mjs";
+export declare const fontFamily: SimpleStyleFunction<'fontFamily'>;
+export declare const fontSize: SimpleStyleFunction<'fontSize'>;
+export declare const fontStyle: SimpleStyleFunction<'fontStyle'>;
+export declare const fontWeight: SimpleStyleFunction<'fontWeight'>;
+export declare const letterSpacing: SimpleStyleFunction<'letterSpacing'>;
+export declare const textTransform: SimpleStyleFunction<'textTransform'>;
+export declare const lineHeight: SimpleStyleFunction<'lineHeight'>;
+export declare const textAlign: SimpleStyleFunction<'textAlign'>;
+export declare const typographyVariant: SimpleStyleFunction<'typography'>;
+declare const typography: SimpleStyleFunction<'typography' | 'fontFamily' | 'fontSize' | 'fontStyle' | 'fontWeight' | 'letterSpacing' | 'lineHeight' | 'textAlign' | 'textTransform'>;
+export type TypographyProps = PropsFor<typeof typography>;
+export default typography;
